@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: bisque;
+}
+
+
+.search-container{
+    position: relative;
+    height: 50px;
+    /* width: 10%; */
+    /* background-color: aqua; */
+}
+/* How to change the size of the text field */
+
+.text-field{
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-left: 3px;
+    height: 20px;
+    width: 9px;
+    transition: width 0.5s ease-in-out;
+}
+
+.text-field{
+    /* width: 9px; */
+}
+.search-icon{
+    font-size: 0.8rem;
+    right: 5.5px;
+    position: absolute;
+    top: 6%;
+    cursor: pointer;
+}
+
+.search-container.active .text-field{
+    width: 200px;
+}
+/* Why I didn't use translation? */
+
+.search-icon:focus,
+.text-field:focus {
+  outline: none;
+}
