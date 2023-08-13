@@ -5,6 +5,7 @@
 }
 
 .container{
+    /* Why the container shrinks to the size of the search bar? */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +27,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     font-size: 12px;
-    padding-right: 20px;
+    padding-right: 20px; /* Space for the search-icon */
     padding-left: 3px;
     height: 20px;
     width: 9px;
@@ -37,9 +38,9 @@
     /* width: 9px; */
 }
 .search-icon{
+    position: absolute;
     font-size: 0.8rem;
     right: 5px;
-    position: absolute;
     top: 6%;
     cursor: pointer;
 }

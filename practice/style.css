@@ -5,3 +5,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    margin: 0.5rem;
+    font: 'Robot', sans-serif;
+    text-align: center;
+}
+
+nav{
+    background-color: aquamarine;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 3rem;
+    line-height: 6rem;
+    border-radius: 2rem;
+}
+
+h2{
+    padding: 1rem;
+    background-color: gold;
+    border-radius: 2rem 2rem 0 0;
+}
+
+ul{
+    /* list-style-position: inside; */
+    list-style-type: none;
+}
+
+li{
+    border-top: 1px solid grey;
+}
+
+a{
+    display: block;
+}
+
+li a,
+li a:visited{
+    text-decoration: none;
+    color: grey;
+}
+
+li a:hover,
+li a:focus{
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+li:last-child a{
+    border-radius: 0 0 2rem 2rem;
+}
