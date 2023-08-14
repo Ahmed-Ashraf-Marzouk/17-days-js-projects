@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    width: 100%;
+    overflow-x:hidden;
+}
+div{
+    margin-bottom: 7rem;
+    padding: 2rem;
+    font-size: 15rem;
+    width: 30rem;
+    background-color: rgb(59, 11, 85);
+    border: 0;
+    border-radius: 2rem;
+    color: white;
+
+}
+
+div:nth-child(odd){
+    position: relative;
+    transform: translateX(400%);
+    transition: all 0.4s ease;
+}
+
+div:nth-child(even){
+    transform: translateX(-400%);
+    transition: all 0.4s ease;
+}
+
+
+div.show{
+    transform: translateX(0%);
+}
