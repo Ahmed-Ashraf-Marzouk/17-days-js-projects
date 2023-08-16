@@ -1,8 +1,9 @@
 const email = document.querySelector('.email')
 const password = document.querySelector('.password')
-const email_letters = document.querySelectorAll('.email-l')
+const emailLetters = document.querySelectorAll('.email-l')
+const passwordLabel = document.querySelector('.password-label')
 email.onfocus = () => {
-    email_letters.forEach((letter) => {
+    emailLetters.forEach((letter) => {
         letter.classList.add('active')
     })
 }
@@ -11,9 +12,15 @@ email.onblur = () => {
     console.log(email.value.length == 0)
     if(email.value.length == 0)
     {
-        email_letters.forEach((letter) => {
+        emailLetters.forEach((letter) => {
             letter.classList.remove('active')
         })
     }
    
 }
+
+
+
+passwordLabel.innerHTML = passwordLabel.innerText.split("").map((element, idx) => {
+    `<span style="transition-delay:${idx * 50}ms">${letter}</span>`
+}).join('')
