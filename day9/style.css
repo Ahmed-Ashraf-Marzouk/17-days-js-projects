@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&family=Noto+Kufi+Arabic:wght@300;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 228, 196, 0.701);
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.sound-container{
+    background-color: rgba(255, 247, 0, 0.505);
+    width: fit-content;
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px;
+    font-family:'Noto Kufi Arabic', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 0.5px solid rgb(71, 59, 59);
+    text-align: center;
+    user-select: none; /* Standard syntax */
+
+}
+.sound-container:hover{
+    background-color: rgba(255, 247, 0, 0.758);
+    box-shadow: 1px 1px 1px;
+
+}
+.sound-container.active{
+    background-color: rgba(255, 247, 0, 0.18);
+    font-size: 1.2rem;
+    border: 0.5px solid black;
+    box-shadow: 2px 2px 2px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
