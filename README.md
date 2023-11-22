@@ -1,1 +1,1 @@
-# 50-days-js-projects
+# 17-days-js-projects
